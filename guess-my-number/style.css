@@ -1,0 +1,53 @@
+@font-face {
+  font-family: PressStart2P;
+  src: url(./font/PressStart2P-Regular.ttf);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+}
+
+div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 90vw;
+  height: 50vh;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+body {
+  color: white;
+  margin: 0px;
+  font-family: PressStart2P;
+  background-color: blue;
+}
+h4 {
+  font-size: 12px;
+}
+.guessNumber {
+  height: 32px;
+  position: absolute;
+  top: 45.5%;
+  left: 50%;
+  background-color: blue;
+  text-align: center;
+  line-height: 32px;
+}
+input {
+  margin-left: 40%;
+
+  height: 15%;
+  width: 25%;
+}
+button {
+  width: 10%;
+  height: 10%;
+  margin-left: 49%;
+}

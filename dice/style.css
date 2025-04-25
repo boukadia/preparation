@@ -1,0 +1,194 @@
+
+body{
+    background-image: linear-gradient(to top left,#dc439496 20%,#4bbbbb);
+}.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gameCondition{
+    position: fixed;
+    top: 15px;
+    left: 2%;
+    font-size: small !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to top left,#dc439496 30%,#4bbbbb);
+
+    width: 120px;
+    height: fit-content;
+    border-radius: 10px;
+}
+.fa-solid{
+    color: rgb(245, 227, 227);
+    padding-right: 5px;
+    padding-top: 2px;
+    align-self: flex-end;
+    padding-left: 5px;
+}
+.btnCondition{
+    position: absolute;
+    top:10px;
+    background-image: linear-gradient(to top left,#dc439496 20%,#4bbbbb);
+    border-radius: 10px;
+}
+.btnCondition:hover{
+    transform: scale(1.1);
+}
+.gameCondition span {
+    background-color: rgb(201, 131, 39);
+}
+.gameCondition .s {
+    background-color: rgb(237, 16, 16);
+}
+.hidden{
+    display: none;
+}
+.player1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #dc439496;
+  width: 45%;
+  height: 70vh;
+  text-align: center;
+}
+.player2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #4bbbbb;
+  width: 45%;
+  height: 70vh;
+  text-align: center;
+}
+.newGame {
+  position: absolute;
+  bottom: 75%;
+  left: 39%;
+  border-radius: 10px;
+  height: 35px;
+  width: 24%;
+}
+.hold {
+  position: absolute;
+  left: 42%;
+  bottom: 18%;
+  width: 18%;
+  height: 35px;
+  border-radius: 10px;
+}
+.rollDice {
+  position: absolute;
+  bottom: 24%;
+  left: 41%;
+  width: 19%;
+  height: 35px;
+  border-radius: 10px;
+}
+img {
+  position: absolute;
+  left: 41%;
+}
+button {
+  width: 80px;
+}
+@media screen and (min-width: 501px) {
+  .newGame {
+    position: absolute;
+    bottom: 75%;
+    left: 45%;
+    border-radius: 10px;
+    height: 40px;
+    width: 11%;
+  }
+  .hold {
+    position: absolute;
+    left: 45%;
+    bottom: 11%;
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .rollDice {
+    position: absolute;
+    bottom: 18%;
+    left: 45%;
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 10% !important;
+    position: absolute;
+    left: 45%;
+  }
+  .player1 {
+  
+    width: 34%;
+    height: 87vh;
+  }
+  .player2 {
+   
+    
+    width: 34%;
+    height: 87vh;
+    
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  img {
+    width: 10% !important;
+    position: absolute;
+    left: 45%;
+  }
+  body{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+    body{
+        font-size: 10px;
+      }
+  .newGame {
+    position: absolute;
+    bottom: 75%;
+    left: 30%;
+    border-radius: 10px;
+    height: 28px;
+    width: 80px;
+  }
+  .hold {
+    position: absolute;
+    left: 30%;
+    bottom: 16.5%;
+    width: 80px;
+    height: 28px;
+    border-radius: 10px;
+  }
+  .rollDice {
+    position: absolute;
+    bottom: 21%;
+    left: 30%;
+    width: 80px;
+    height: 28px;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 10% !important;
+    position: absolute;
+    left: 46%;
+  }
+  .player1 {
+    height: 65vh;
+  }
+  .player2 {
+    height: 65vh;
+    text-align: center;
+  }
+}
