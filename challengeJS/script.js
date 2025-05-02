@@ -90,7 +90,6 @@ function randoom() {
 // randoom()
 // console.log(n);
 
-
 // ======================================
 // ======================================
 // ======================================
@@ -111,7 +110,7 @@ const employees = [
     email: "jean.dupont@company.com",
     projects: ["Project Alpha", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 2,
@@ -126,7 +125,7 @@ const employees = [
     email: "marie.martin@company.com",
     projects: ["Project Beta", "Project Gamma"],
     isActive: true,
-    languages: ["French", "Spanish"]
+    languages: ["French", "Spanish"],
   },
   {
     id: 3,
@@ -141,7 +140,7 @@ const employees = [
     email: "pierre.bernard@company.com",
     projects: ["Project Alpha", "Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English", "German"]
+    languages: ["French", "English", "German"],
   },
   {
     id: 4,
@@ -156,7 +155,7 @@ const employees = [
     email: "thomas.petit@company.com",
     projects: ["Project Gamma", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 5,
@@ -171,7 +170,7 @@ const employees = [
     email: "camille.leroux@company.com",
     projects: ["Project Alpha", "Project Delta"],
     isActive: false,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 6,
@@ -186,7 +185,7 @@ const employees = [
     email: "antoine.moreau@company.com",
     projects: ["Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 7,
@@ -201,7 +200,7 @@ const employees = [
     email: "elodie.simon@company.com",
     projects: ["Project Gamma"],
     isActive: true,
-    languages: ["French"]
+    languages: ["French"],
   },
   {
     id: 8,
@@ -214,9 +213,14 @@ const employees = [
     skills: ["Architecture", "Team Leadership", "Cloud Computing"],
     joinDate: "2016-04-05",
     email: "nicolas.laurent@company.com",
-    projects: ["Project Alpha", "Project Beta", "Project Gamma", "Project Delta"],
+    projects: [
+      "Project Alpha",
+      "Project Beta",
+      "Project Gamma",
+      "Project Delta",
+    ],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 9,
@@ -231,7 +235,7 @@ const employees = [
     email: "laura.michel@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "German"]
+    languages: ["French", "English", "German"],
   },
   {
     id: 10,
@@ -246,7 +250,7 @@ const employees = [
     email: "alexandre.dubois@company.com",
     projects: ["Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 11,
@@ -261,7 +265,7 @@ const employees = [
     email: "sarah.lefevre@company.com",
     projects: ["Project Alpha", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 12,
@@ -276,7 +280,7 @@ const employees = [
     email: "maxime.roux@company.com",
     projects: [],
     isActive: false,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 13,
@@ -291,7 +295,7 @@ const employees = [
     email: "julie.fournier@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 14,
@@ -306,7 +310,7 @@ const employees = [
     email: "david.girard@company.com",
     projects: ["Project Alpha", "Project Delta"],
     isActive: true,
-    languages: ["French", "English", "Portuguese"]
+    languages: ["French", "English", "Portuguese"],
   },
   {
     id: 15,
@@ -321,7 +325,7 @@ const employees = [
     email: "chloe.blanc@company.com",
     projects: ["Project Beta", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 16,
@@ -336,7 +340,7 @@ const employees = [
     email: "kevin.lemoine@company.com",
     projects: ["Project Gamma"],
     isActive: true,
-    languages: ["French"]
+    languages: ["French"],
   },
   {
     id: 17,
@@ -351,7 +355,7 @@ const employees = [
     email: "amandine.perrot@company.com",
     projects: ["Project Alpha", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Italian"]
+    languages: ["French", "English", "Italian"],
   },
   {
     id: 18,
@@ -366,7 +370,7 @@ const employees = [
     email: "romain.chevalier@company.com",
     projects: ["Project Beta"],
     isActive: false,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 19,
@@ -381,7 +385,7 @@ const employees = [
     email: "celine.barbier@company.com",
     projects: ["Project Alpha", "Project Gamma", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 20,
@@ -396,7 +400,7 @@ const employees = [
     email: "julien.arnaud@company.com",
     projects: ["Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 21,
@@ -411,7 +415,7 @@ const employees = [
     email: "manon.royer@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 22,
@@ -426,7 +430,7 @@ const employees = [
     email: "fabien.colin@company.com",
     projects: ["Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 23,
@@ -441,7 +445,7 @@ const employees = [
     email: "elise.mercier@company.com",
     projects: ["Project Beta", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 24,
@@ -456,7 +460,7 @@ const employees = [
     email: "hugo.bourgeois@company.com",
     projects: [],
     isActive: true,
-    languages: ["French", "English", "German"]
+    languages: ["French", "English", "German"],
   },
   {
     id: 25,
@@ -471,7 +475,7 @@ const employees = [
     email: "clara.henry@company.com",
     projects: ["Project Alpha", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 26,
@@ -486,7 +490,7 @@ const employees = [
     email: "mathieu.dasilva@company.com",
     projects: ["Project Beta", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English", "Portuguese"]
+    languages: ["French", "English", "Portuguese"],
   },
   {
     id: 27,
@@ -501,7 +505,7 @@ const employees = [
     email: "oceane.leroy@company.com",
     projects: ["Project Alpha"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 28,
@@ -516,7 +520,7 @@ const employees = [
     email: "quentin.sanchez@company.com",
     projects: ["Project Alpha", "Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 29,
@@ -531,7 +535,7 @@ const employees = [
     email: "lea.nguyen@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Vietnamese"]
+    languages: ["French", "English", "Vietnamese"],
   },
   {
     id: 30,
@@ -546,7 +550,7 @@ const employees = [
     email: "baptiste.meyer@company.com",
     projects: ["Project Alpha", "Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English", "German"]
+    languages: ["French", "English", "German"],
   },
   {
     id: 31,
@@ -561,7 +565,7 @@ const employees = [
     email: "zoe.dumont@company.com",
     projects: ["Project Gamma"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 32,
@@ -576,7 +580,7 @@ const employees = [
     email: "theo.noel@company.com",
     projects: ["Project Beta", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 33,
@@ -591,7 +595,7 @@ const employees = [
     email: "anais.bertrand@company.com",
     projects: ["Project Alpha", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 34,
@@ -604,9 +608,15 @@ const employees = [
     skills: ["Technical Strategy", "Innovation", "Team Building"],
     joinDate: "2014-02-05",
     email: "paul.leclercq@company.com",
-    projects: ["Project Alpha", "Project Beta", "Project Gamma", "Project Delta", "Project Epsilon"],
+    projects: [
+      "Project Alpha",
+      "Project Beta",
+      "Project Gamma",
+      "Project Delta",
+      "Project Epsilon",
+    ],
     isActive: true,
-    languages: ["French", "English", "Dutch"]
+    languages: ["French", "English", "Dutch"],
   },
   {
     id: 35,
@@ -621,7 +631,7 @@ const employees = [
     email: "ines.riviere@company.com",
     projects: ["Project Gamma"],
     isActive: false,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 36,
@@ -636,7 +646,7 @@ const employees = [
     email: "alexis.philippe@company.com",
     projects: ["Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 37,
@@ -651,7 +661,7 @@ const employees = [
     email: "louise.fontaine@company.com",
     projects: ["Project Beta", "Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Chinese"]
+    languages: ["French", "English", "Chinese"],
   },
   {
     id: 38,
@@ -666,7 +676,7 @@ const employees = [
     email: "benjamin.caron@company.com",
     projects: ["Project Alpha"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 39,
@@ -681,7 +691,7 @@ const employees = [
     email: "emma.perrin@company.com",
     projects: ["Project Beta", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 40,
@@ -696,7 +706,7 @@ const employees = [
     email: "nathan.giraud@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 41,
@@ -711,7 +721,7 @@ const employees = [
     email: "lena.boyer@company.com",
     projects: ["Project Beta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 42,
@@ -726,7 +736,7 @@ const employees = [
     email: "arthur.andre@company.com",
     projects: ["Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 43,
@@ -741,7 +751,7 @@ const employees = [
     email: "julia.clement@company.com",
     projects: ["Project Alpha", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English", "Italian"]
+    languages: ["French", "English", "Italian"],
   },
   {
     id: 44,
@@ -756,7 +766,7 @@ const employees = [
     email: "tom.fernandes@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English", "Portuguese"]
+    languages: ["French", "English", "Portuguese"],
   },
   {
     id: 45,
@@ -771,7 +781,7 @@ const employees = [
     email: "lina.lopez@company.com",
     projects: ["Project Alpha", "Project Beta"],
     isActive: true,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 46,
@@ -786,7 +796,7 @@ const employees = [
     email: "enzo.robin@company.com",
     projects: ["Project Gamma"],
     isActive: false,
-    languages: ["French"]
+    languages: ["French"],
   },
   {
     id: 47,
@@ -801,7 +811,7 @@ const employees = [
     email: "maelys.gauthier@company.com",
     projects: ["Project Beta", "Project Delta"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 48,
@@ -816,7 +826,7 @@ const employees = [
     email: "hugo.martinez@company.com",
     projects: ["Project Alpha", "Project Gamma"],
     isActive: true,
-    languages: ["French", "English", "Spanish"]
+    languages: ["French", "English", "Spanish"],
   },
   {
     id: 49,
@@ -831,7 +841,7 @@ const employees = [
     email: "leonie.dufour@company.com",
     projects: ["Project Epsilon"],
     isActive: true,
-    languages: ["French", "English"]
+    languages: ["French", "English"],
   },
   {
     id: 50,
@@ -846,40 +856,36 @@ const employees = [
     email: "sophie.leroy@company.com",
     projects: ["Project Epsilon"],
     isActive: false,
-    languages: ["French", "English", "Italian"]
-  }
+    languages: ["French", "English", "Italian"],
+  },
 ];
 
 //   1. Get the first name of the first employee
-function getFirstEmployeeFirstName(){
-return employees[0].firstName;
+function getFirstEmployeeFirstName() {
+  return employees[0].firstName;
 }
 
 //   console.log(getFirstEmployeeFirstName())
 
 // 2. Get the last name of the last employee
 
-function getLastEmployeeLastName(){
-  let lenth=employees.length;
-  return employees[lenth-1].lastName;
+function getLastEmployeeLastName() {
+  let lenth = employees.length;
+  return employees[lenth - 1].lastName;
 }
-console.log(getLastEmployeeLastName())
-
+console.log(getLastEmployeeLastName());
 
 //   3. Get the department of employee with ID 5
-function getEmployeeDepartmentById(){
+function getEmployeeDepartmentById() {
   return employees[5].department;
-
 }
-console.log(getEmployeeDepartmentById())
+console.log(getEmployeeDepartmentById());
 
 // 4. Count how many employees are in the array
-function countEmployees(){
+function countEmployees() {
   return employees.length;
-
 }
-console.log(countEmployees())
-
+console.log(countEmployees());
 
 // Check if any employee is inactive (isActive: false)
 //  - **Function Name**: `hasInactiveEmployees`
@@ -888,13 +894,11 @@ console.log(countEmployees())
 //  - **Expected Result**: Returns `true` if any employee is inactive, otherwise `false`.
 
 function hasInactiveEmployees() {
-for (let i = 0; i < employees.length; i++) {
-  if (employees[i].isActive==false) {
-   return console.log("true");
-    
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].isActive == false) {
+      return console.log("true");
+    }
   }
-  
-}
 }
 hasInactiveEmployees();
 
@@ -905,16 +909,16 @@ hasInactiveEmployees();
 //  - **Expected Result**: Returns the average age of all employees.
 
 function calculateAverageAge(employees) {
-  let somme=0;
-  let c=0
+  let somme = 0;
+  let c = 0;
   for (let i = 0; i < employees.length; i++) {
-    somme+=employees[i].age;
+    somme += employees[i].age;
     c++;
   }
-  let moy=somme/c;
+  let moy = somme / c;
   return console.log(moy);
 }
-calculateAverageAge(employees)
+calculateAverageAge(employees);
 
 // Find the employee with the highest salary
 //  - **Function Name**: `getHighestPaidEmployee`
@@ -923,21 +927,18 @@ calculateAverageAge(employees)
 //  - **Expected Result**: Returns the employee object with the highest salary.
 
 function getHighestPaidEmployee(employee) {
-let max=0;
-let id;
-for (let i = 0; i < employee.length; i++) {
-if (employee[i].salary>max) {
-  max=employee[i].salary;
-  id=i
-}
+  let max = 0;
+  let id;
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].salary > max) {
+      max = employee[i].salary;
+      id = i;
+    }
+  }
 
+  return console.log(employee[id]);
 }
-
-return console.log(employee[id])
-
-  
-}
-getHighestPaidEmployee(employees)
+getHighestPaidEmployee(employees);
 
 // 8. Count how many employees are in the "Développement" department
 //  - **Function Name**: `countEmployeesInDepartment`
@@ -946,15 +947,12 @@ getHighestPaidEmployee(employees)
 //  - **Expected Result**: Returns the number of employees in the "Développement" department.
 
 function countEmployeesInDepartment(employee) {
-  let count=0;
+  let count = 0;
   for (let i = 0; i < employee.length; i++) {
-    if (employee[i].department=="Développement") {
+    if (employee[i].department == "Développement") {
       count++;
-      
     }
-    
   }
-  return console.log(count) ;
-  
+  return console.log(count);
 }
-countEmployeesInDepartment(employees)
+countEmployeesInDepartment(employees);

@@ -253,11 +253,19 @@ class Livre
 class Utilisateur
 {
     private $nom;
+    private DateTime $date;
     private array $emprunts = [];
     public function emprunterLivre(livre $livre, $status = 0)
     {
-        $this->emprunts[] = $livre;
-        $livre->setStatus($status);
+        if ($livre->getStatus() == 1) {
+            // echo "kkkk";
+            $this->emprunts[] = $livre;
+            $livre->setStatus($status);
+            echo "<br>";
+        } else {
+            echo  "ce book n'est pas dans la bibliothique";
+            echo "<br>";
+        }
     }
     public function rendreLivre(livre $livre)
     {
@@ -274,24 +282,38 @@ class Utilisateur
     {
 
         foreach ($this->emprunts as $emprunt) {
-            echo ($emprunt->reference);
+            echo ($emprunt->titre);
             echo "<br>";
         }
     }
 }
 $livre1 = new Livre("boite", "mohammed", true, 1);
 $livre2 = new Livre("mort", "mohammed", true, 2);
-$livre3 = new Livre("test", "mohammed", 1, 3);
+$livre3 = new Livre("alaaddin", "mohammed", 1, 3);
 // echo $livre1->titre;
 
 $utilisateur = new Utilisateur;
 $utilisateur->emprunterLivre($livre1);
-// $utilisateur->emprunterLivre($livre2);
+$utilisateur->emprunterLivre($livre3);
 $utilisateur->emprunterLivre($livre2);
 $utilisateur->rendreLivre($livre1);
-$utilisateur->emprunterLivre($livre1);
+$utilisateur->rendreLivre($livre3);
+// $utilisateur->emprunterLivre($livre1);
+// $utilisateur->afficherEmprunts();
 
-$utilisateur->afficherEmprunts();
+$utilisateur1 = new Utilisateur();
+$utilisateur1->emprunterLivre($livre2);
+$utilisateur1->emprunterLivre($livre1);
+$utilisateur1->emprunterLivre($livre3);
+$utilisateur1->afficherEmprunts();
+
+// $utilisateur1->emprunterLivre($livre2);
+// $utilisateur1->emprunterLivre($livre2);
+// $utilisateur1->rendreLivre($livre1);
+// $utilisateur1->emprunterLivre($livre1);
+
+
+// $utilisateur1->afficherEmprunts();
 // var_dump( $livre1->getStatus());
 
 // class User
