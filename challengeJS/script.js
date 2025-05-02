@@ -956,3 +956,277 @@ function countEmployeesInDepartment(employee) {
   return console.log(count);
 }
 countEmployeesInDepartment(employees);
+
+//   1. Get the first name of the first employee
+function getFirstEmployeeFirstName() {
+  return employees[0].firstName;
+}
+
+//   console.log(getFirstEmployeeFirstName())
+
+// 2. Get the last name of the last employee
+
+function getLastEmployeeLastName() {
+  let lenth = employees.length;
+  return employees[lenth - 1].lastName;
+}
+console.log(getLastEmployeeLastName());
+
+//   3. Get the department of employee with ID 5
+function getEmployeeDepartmentById() {
+  return employees[5].department;
+}
+console.log(getEmployeeDepartmentById());
+
+// 4. Count how many employees are in the array
+function countEmployees() {
+  return employees.length;
+}
+console.log(countEmployees());
+
+// Check if any employee is inactive (isActive: false)
+//  - **Function Name**: `hasInactiveEmployees`
+//  - **Input**: `employees`
+//  - **Output**: `true`
+//  - **Expected Result**: Returns `true` if any employee is inactive, otherwise `false`.
+
+function hasInactiveEmployees() {
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].isActive == false) {
+      return console.log("true");
+    }
+  }
+}
+hasInactiveEmployees();
+
+// Calculate the average age of all employees
+//  - **Function Name**: `calculateAverageAge`
+//  - **Input**: `employees`
+//  - **Output**: `31.2`
+//  - **Expected Result**: Returns the average age of all employees.
+
+function calculateAverageAge(employees) {
+  let somme = 0;
+  let c = 0;
+  for (let i = 0; i < employees.length; i++) {
+    somme += employees[i].age;
+    c++;
+  }
+  let moy = somme / c;
+  return console.log(moy);
+}
+calculateAverageAge(employees);
+
+// Find the employee with the highest salary
+//  - **Function Name**: `getHighestPaidEmployee`
+//  - **Input**: `employees`
+//  - **Output**: `{ id: 34, firstName: "Paul", lastName: "Leclercq", ... }`
+//  - **Expected Result**: Returns the employee object with the highest salary.
+
+function getHighestPaidEmployee(employee) {
+  let max = 0;
+  let id;
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].salary > max) {
+      max = employee[i].salary;
+      id = i;
+    }
+  }
+
+  return console.log(employee[id]);
+}
+// getHighestPaidEmployee(employees)
+
+// 8. Count how many employees are in the "Développement" department
+//  - **Function Name**: `countEmployeesInDepartment`
+//  - **Input**: `employees, "Développement"`
+//  - **Output**: `15`
+//  - **Expected Result**: Returns the number of employees in the "Développement" department.
+
+function countEmployeesInDepartment(employee) {
+  let count = 0;
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].department == "Développement") {
+      count++;
+    }
+  }
+  return console.log(count);
+}
+// countEmployeesInDepartment(employees)
+
+//   9. List all unique department names
+//    - **Function Name**: `getUniqueDepartments`
+//    - **Input**: `employees`
+//    - **Output**: `["Développement", "Design", "Management", "Marketing"]`
+//    - **Expected Result**: Returns an array of unique department names.
+
+function getUniqueDepartments(employees) {
+  let tabl = [];
+  for (let i = 0; i < employees.length; i++) {
+    let count = 0;
+    for (let j = i + 1; j < employees.length; j++) {
+      if (employees[i].department == employees[j].department) {
+        count = 1;
+        break;
+      }
+    }
+    if (count == 0) {
+      tabl.push(employees[i].department);
+    }
+  }
+  return tabl;
+}
+
+// console.log (getUniqueDepartments(employees))
+
+// 10. Check if any employee has no projects assigned
+//     - **Function Name**: `hasEmployeesWithoutProjects`
+//     - **Input**: `employees`
+//     - **Output**: `true`
+//     - **Expected Result**: Returns `true` if any employee has no projects assigned, otherwise `false`.
+
+function hasEmployeesWithoutProjects(employee) {
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].projects == "") {
+      //employee[i].projects==false
+
+      return true;
+    }
+  }
+}
+// console.log(hasEmployeesWithoutProjects(employees));
+
+// 11. Count how many employees speak English
+// languages: ["French", "English", "Italian"]
+//     - **Function Name**: `countEnglishSpeakingEmployees`
+//     - **Input**: `employees`
+//     - **Output**: `45`
+//     - **Expected Result**: Returns the number of employees who speak English.
+
+function countEnglishSpeakingEmployees(employee, mots) {
+  let count = 0;
+  for (let i = 0; i < employee.length; i++) {
+    for (let j = 0; j < employee[i].languages.length; j++) {
+      if (employee[i].languages[j] == mots) {
+        count++;
+      }
+    }
+  }
+  return console.log(count);
+}
+// countEnglishSpeakingEmployees(employees,"English");
+
+//12. Find all employees who work on "Project Gamma"
+//     - **Function Name**: `getEmployeesByProject`
+//     - **Input**: `employees, "Project Gamma"`
+//     - **Output**: `[ { id: 1, firstName: "Jean", ... }, { id: 2, firstName: "Marie", ... }, ... ]`
+//     - **Expected Result**: Returns an array of employees working on "Project Gamma".
+
+function getEmployeesByProject(employee, project) {
+  let tabl = [];
+  for (let i = 0; i < employee.length; i++) {
+    for (let j = 0; j < employee[i].projects.length; j++) {
+      if (employee[i].projects[j] == project) {
+        tabl.push(employee[i]);
+        break;
+      }
+    }
+  }
+  return console.log(tabl);
+}
+// getEmployeesByProject(employees,"Project Gamma");
+// meme exercice mais avec une seule project
+function getEmployeesBySeulProject(employee, project) {
+  let tabl = [];
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].projects.length == 1) {
+      for (let j = 0; j < employee[i].projects.length; j++) {
+        if (employee[i].projects[j] == project) {
+          tabl.push(employee[i]);
+          break;
+        }
+      }
+    }
+  }
+
+  return console.log(tabl);
+}
+
+// getEmployeesBySeulProject(employees,"Project Gamma");
+
+// 13. List employees who have more than 2 skills
+//     - **Function Name**: `getEmployeesWithMoreThanTwoSkills`
+//     - **Input**: `employees`
+//     - **Output**: `[ { id: 1, firstName: "Jean", ... }, { id: 3, firstName: "Pierre", ... }, ... ]`
+//     - **Expected Result**: Returns an array of employees with more than 2 skills.
+
+function getEmployeesWithMoreThanTwoSkills(employee) {
+  let tabl = [];
+  let count = 0;
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].skills.length > 2) {
+      tabl.push(employee[i]);
+      count++;
+    }
+  }
+  return console.log([tabl, count]);
+}
+// getEmployeesWithMoreThanTwoSkills(employees);
+
+// 14. Find employees whose last name starts with 'L'
+//     - **Function Name**: `getEmployeesByLastNameInitial`
+//     - **Input**: `employees, 'L'`
+//     - **Output**: `[ { id: 5, lastName: "Leroux", ... }, { id: 8, lastName: "Laurent", ... }, ... ]`
+//     - **Expected Result**: Returns an array of employees whose last name starts with 'L'.
+
+function getEmployeesByLastNameInitial(employee, mots) {
+  let tabl = [];
+  for (let i = 0; i < employee.length; i++) {
+    if (employee[i].lastName[0] == mots) {
+      tabl.push(employee[i]);
+    }
+  }
+  return console.log(tabl);
+}
+// getEmployeesByLastNameInitial(employees,"L");
+
+// 15. Calculate the average salary per department
+//     - **Function Name**: `calculateAverageSalaryByDepartment`
+//     - **Input**: `employees`
+//     - **Output**: `{ "Développement": 60000, "Design": 50000, ... }`
+//     - **Expected Result**: Returns an object with average salaries for each department.
+
+function calculateAverageSalaryByDepartment(employee) {
+  let tabl = [];
+
+  for (let i = 0; i < employee.length - 1; i++) {
+    let count = 1;
+    let moy;
+    let c = 0;
+    somme = employee[i].salary;
+
+    for (let j = 0; j < tabl.length; j++) {
+      if (employee[i].department == tabl[j][0]) {
+        c = 1;
+
+        break;
+      }
+    }
+
+    if (c == 1) {
+      continue;
+    } else {
+      for (let k = i + 1; k < employee.length; k++) {
+        if (employee[i].department == employee[k].department) {
+          count++;
+          somme += employee[k].salary;
+        }
+      }
+
+      moy = somme / count;
+      tabl.push([employee[i].department, moy, count]);
+    }
+  }
+  return console.log(tabl);
+}
+calculateAverageSalaryByDepartment(employees);
